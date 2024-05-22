@@ -1,0 +1,330 @@
+:root {
+  --main-color: #34c9b6;
+  --second-color: #c7f2ff;
+  --circle-color: #e5fcdd;
+  --card-color: #c7f2ff;
+  --ground-color: #f8fbff;
+}
+body {
+  font-family: "Roboto", sans-serif !important;
+  overflow-x: hidden !important;
+  background-color: var(--ground-color);
+}
+.h-100vh {
+  height: 100vh;
+}
+.row {
+  margin: 0px !important;
+}
+.logo-color {
+  color: var(--second-color);
+}
+.text-main-color {
+  color: var(--main-color);
+}
+.second-bgcolor {
+  background-color: var(--second-color);
+}
+.main-bgcolor {
+  background-color: var(--main-color);
+}
+.bg-card-color {
+  background-color: var(--card-color);
+}
+.nav-link {
+  font-weight: bold;
+}
+.nav-link.active {
+  background-color: #cccccc4f;
+  border-radius: 10px;
+}
+.headerSection {
+  height: 100vh;
+  position: relative;
+  z-index: 2;
+  background-color: var(--main-color);
+  overflow: hidden;
+}
+.headerSection:after {
+  content: "";
+  z-index: -1;
+  position: absolute;
+  right: 0;
+  bottom: -160px;
+  width: 0px;
+  height: 0px;
+  border-style: solid;
+  border-width: 0 0 400px 2250px;
+  border-color: transparent transparent #f8fbff transparent;
+  transform: rotate(0deg);
+}
+
+.text-white-imp {
+  color: wihte !important;
+}
+.bg-icon-color {
+  background-color: var(--circle-color);
+}
+.button-appointment:hover,
+.button-seemore:hover {
+  background-color: #073b34 !important;
+  color: white !important;
+}
+.cards {
+  box-shadow: 0px 0px 20px #0000000e;
+}
+.cards:hover {
+  background-color: var(--card-color);
+  box-shadow: 0px 0px 20px #00000013;
+}
+.cards:hover .bg-icon-color {
+  background-color: white;
+}
+.card-icons {
+  color: var(--main-color);
+}
+.mobile-image {
+  transition: all 0.3s ease-in-out;
+}
+.mobile-image:hover {
+  transform: scale(1.1);
+}
+.medicare {
+  height: 75vh;
+}
+.medicareSection {
+  position: relative !important;
+  overflow-x: hidden;
+}
+
+.medicareSection-img {
+  position: absolute;
+  top: 0px;
+  right: -250px;
+  height: 100%;
+  z-index: -1;
+}
+.button-seemore2:hover {
+  background-color: #073b34 !important;
+}
+.video-img {
+  background-color: transparent;
+  position: relative;
+}
+.video-img2::before {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 525px;
+  height: 375px;
+  background-color: var(--main-color);
+  top: -8px;
+  left: 30px;
+  border-radius: 1rem;
+}
+.square {
+  width: 35px;
+  height: 35px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.doctor-icons:hover {
+  color: white;
+  background-color: var(--main-color) !important;
+}
+.fw-med-custom {
+  font-weight: 500;
+}
+.confirm-btn {
+  background-color: var(--main-color);
+}
+.confirm-btn:hover {
+  background-color: #083b34;
+}
+.owl-theme .owl-dots {
+  margin-top: 50px !important;
+}
+.owl-theme .owl-dots .owl-dot span {
+  background-color: #34c9b577;
+}
+/* .owl-theme .owl-dots .owl-dot span:hover {
+  background-color: #05332d77;
+} */
+.owl-theme .owl-dots .owl-dot.active span,
+.owl-theme .owl-dots .owl-dot:hover span {
+  background: #34c9b6;
+}
+.footer {
+  width: 100%;
+  background-color: var(--main-color);
+  position: relative;
+  overflow-x: hidden;
+}
+.social-icons:hover {
+  color: white !important;
+  background-color: #083a33 !important;
+}
+.footer:before {
+  content: "";
+  /* z-index: -1; */
+  position: absolute;
+  right: 0;
+  top: 0px;
+  width: 0px;
+  height: 0px;
+  border-style: solid;
+  border-width: 75px 2000px 0 0;
+  border-color: #f8fbff transparent transparent transparent;
+  transform: rotate(0deg);
+}
+.scrolltopbtn {
+  display: none;
+  cursor: pointer;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background-color: #0a3f38;
+  color: white;
+  border: none;
+  box-shadow: 0px 0px 30px 15px #24242431;
+}
+.scrolltopbtn:hover {
+  color: white;
+  background-color: #268f81 !important;
+}
+
+.circle-shape {
+  width: 140px;
+  height: 140px;
+}
+
+@media only screen and (max-width: 575.99px) {
+  .headerSection {
+    overflow: visible;
+  }
+  .headerSection:after {
+    display: none !important;
+  }
+  .header-text-h1 {
+    font-size: larger;
+  }
+  .subtext {
+    font-size: small !important;
+  }
+  .w-xs-full {
+    width: 100%;
+  }
+  .hidden-img {
+    display: none !important;
+  }
+  .h-xs-100vh {
+    height: 100vh !important;
+  }
+  .h-xs-100vh-custom {
+    height: calc(100vh - 80px) !important;
+  }
+  .h-xs-100 {
+    height: 100% !important;
+  }
+  .medicareSection-img {
+    display: none !important;
+  }
+  .video-img2::before {
+    display: none !important;
+  }
+}
+
+@media (min-width: 576px) and (max-width: 767.99px) {
+  .headerSection {
+    overflow: visible;
+  }
+  .headerSection:after {
+    display: none;
+  }
+  .header-text-h1 {
+    font-size: larger;
+  }
+  .subtext {
+    font-size: small !important;
+  }
+  .w-md-full {
+    width: 100%;
+  }
+  .hidden-img {
+    display: flex !important;
+  }
+  .h-md-100vh {
+    height: 100vh !important;
+  }
+  .h-md-100vh-custom {
+    height: calc(100vh - 80px) !important;
+  }
+  .h-md-100 {
+    height: 100% !important;
+  }
+  .medicareSection-img {
+    display: none !important;
+  }
+  .video-img2::before {
+    display: none !important;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991.99px) {
+  .headerSection {
+    overflow: visible;
+  }
+
+  .headerSection:after {
+    display: none;
+  }
+  .header-text-h1 {
+    font-size: larger;
+  }
+  .subtext {
+    font-size: small !important;
+  }
+  .w-md-full {
+    width: 100%;
+  }
+  .h-md-100vh {
+    height: 100vh !important;
+  }
+  .h-md-100vh-custom {
+    height: calc(100vh - 80px) !important;
+  }
+  .h-md-100 {
+    height: 100% !important;
+  }
+  .medicareSection-img {
+    display: none !important;
+  }
+  .video-img2::before {
+    display: none !important;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1199.99px) {
+  .headerSection {
+    overflow: visible;
+  }
+
+  .headerSection:after {
+    bottom: -160px !important;
+    border-width: 0 0 300px 2250px !important;
+  }
+}
+
+@media (min-width: 1200px) and (max-width: 1500px) {
+  .footer {
+    overflow-x: visible;
+  }
+  /* .footer:before {
+    top: -10px !important;
+  } */
+}
